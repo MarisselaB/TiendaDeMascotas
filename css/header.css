@@ -1,0 +1,12 @@
+div.barraNegra {
+    background-color: black;
+    color: white;
+}
+
+div.barraAmarilla {
+    background-color: #f0a83e;
+}
+
+ul {
+    list-style-type: none;
+}
