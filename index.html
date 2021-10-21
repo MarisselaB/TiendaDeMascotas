@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link href="css/variable.css" rel="stylesheet">
     <link href="css/header.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet">
-    <link href="css/variable.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="css/responsive.css">
     <title>Proyecto-Integrador</title>
 </head>
 
@@ -17,17 +18,15 @@
     <header>
         <div class="barraNegra">
             <div class="izqBarraNegra">
-                <p>Grandes ofertas en comederos</p>
+                <span>Grandes ofertas en comederos</span>
             </div>
             <div class="derBarraNegra">
-                <ul>
-                    <li>Español</li>
-                    <li>Arg$</li>
-                </ul>
+                <span>Español</span> <img src="img/flechaHaciaAbajo.svg" alt="flecha">
+                <span>ARG$</span> <img src="img/flechaHaciaAbajo.svg" alt="flecha">
             </div>
         </div>
         <div class="barraAmarilla">
-            <img src="img/Logo.png" alt="imagenLogo">
+            <div class="logoPrincipal"></div>
             <nav>
                 <ul>
                     <li><img src="img/huellas.svg" alt="huella"><a href=#>Categorias</a></li>
@@ -36,54 +35,128 @@
                     <li><img src="img/huellas.svg" alt="huella"><a href=#>Contactanos</a></li>
                 </ul>
             </nav>
-            <div class="mobile"> </div>
+            <div class="mobile">
+                <i class="fas fa-bars"></i>
+             </div>
         </div>
     </header>
 
-    <section>
-        <h3>¡Es un placer tenerte aqui!</h3>
-        <p>¡Comederos con descuento!</p>
-        <span class="comederos">COMEDEROS</span>
-    </section>
-
     <main>
-        <article>
-            <div class="descripcion">
-                <img src="img/huellasAmarilla.svg" alt="fotohuella">
-                <h1>Productos Destacados</h1>
-                <span> Comederos - </span>
-                <span> Accesorios - </span>
-                <span> Comida </span>
-            </div>
-            <div class="producto">
-                <img src="img/churrasquito.png" alt="jugueteChurrasquito">
-                <p>Juguete Churrasquito</p>
-                <p class="especial">$150</p>
-            </div>
-            <div class="producto">
-                <img src="img/comedero.png" alt="Comedero">
-                <p>Comedero para perro</p>
-                <p class="especial">$250</p>
-            </div>
-            <div class="producto">
-                <img src="img/Huesito.png" alt="jugueteHuesito">
-                <p>Juguete huesito</p>
-                <p class="especial">$650</p>
-            </div>
-        </article>
-    </main>
-    <footer>
-        <h4>Localidad</h4>
-        <p>Calle - Provincia</p>
-        <img src="img/localizacion.svg" alt="localizacion">
-        <h4>Teléfono</h4>
-        <p>15-111-111</p>
-        <img src="img/telefono.svg" alt="telefono">
-        <h4>Correo Electrónico</h4>
-        <p>tienda@catandog.com</p>
-        <img src="img/email.svg" alt="email">
-        <p><img src="img/Logo.svg" alt="logo"></p>
 
+        <section class="imagenPrincipal">
+            <div class="textoLogo">
+                <h2>¡Es un placer tenerte aqui!</h2>
+                <p>¡Comederos con descuento!</p>
+                <span class="comederos">COMEDEROS</span>
+            </div>
+        </section>
+
+
+        <article class="productosDestacados">
+            <img src="img/huellasAmarilla.svg" alt="fotohuella">
+            <h1>Productos Destacados</h1>
+            <span> Comederos - Accesorios - Comida </span>
+        </article>
+
+        <section class="productos">
+            <article class="contenido">
+                <div class="productoArriba">
+                    <img src="img/churrasquito.png" alt="jugueteChurrasquito"></div>
+                <div class="productoAbajo">
+                    <h3>Juguete Churrasquito</h3>
+                    <p class="especial">$150</p>
+                </div>
+            </article>
+            <article class="contenido">
+                <div class="productoArriba">
+                    <img src="img/comedero.png" alt="Comedero"></div>
+                <div class="productoAbajo">
+                    <h3>Comedero para perro</h3>
+                    <p class="especial">$250</p>
+                </div>
+            </article>
+            <article class="contenido">
+                <div class="productoArriba">
+                    <img src="img/Huesito.png" alt="jugueteHuesito"></div>
+                <div class="productoAbajo">
+                    <h3>Juguete huesito</h3>
+                    <p class="especial">$650</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="formulario">
+
+            <form class="form1" action="" method="get">
+                <h3>Contáctanos</h3>
+
+                <!-- <label for="nombre">Contáctanos</label> -->
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido">
+
+                <!-- <label for="correo">Email</label> -->
+                <input type="email" name="email" id="email" placeholder="Ingresa tu correo electrónico">
+                <!-- <label for="telefono"></label> -->
+                <input type="tel" name="telefono" id="telefono" placeholder="Teléfono">
+
+                <div class="botones">
+                    <button class="resetear" type="reset">Resetear</button>
+                    <button class="enviar" type="submit">Enviar</button>
+                </div>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="barraAmarillaFooter">
+            <div class="izqBarraAmarillaFooter">
+                <div class="Sobre"></div>
+                <span>Suscríbete para más novedades</span>
+            </div>
+
+            <div class="derBarraAmarillaFooter">
+                <form action="" method="get">
+                    <!-- <label for="correo"></label> -->
+                    <input type="email" name="correo" id="correo" placeholder="Ingresa tu correo electrónico">
+                    <button>Suscribirme</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="barraCafeFooter">
+            <div class="barraCafeFooterIzq">
+                <section>
+                    <img src="img/localizacion.svg" alt="fotoLocalizacion">
+                    <div class="texto">
+                        <h4>Localidad</h4>
+                        <p>Calle - Provincia</p>
+                    </div>
+                </section>
+
+                <section>
+                    <img src="img/telefono.svg" alt="fotoTelefono">
+                    <div class="texto">
+                        <h4>Teléfono</h4>
+                        <p>15-111-111</p>
+                    </div>
+                </section>
+
+                <section>
+                    <img src="img/email.svg" alt="fotoEmail">
+                    <div class="texto">
+                        <h4>Correo Electrónico</h4>
+                        <p>tienda@catandog.com</p>
+                    </div>
+                </section>
+            </div>
+            
+            <div class="barraCafeFooterDer">
+                <img src="img/Logo.svg" alt="logoInferior">
+            </div>
+        </div>
+            
         <div class="barraNegraFooter">
             <p>Todos los derechos reservados</p>
         </div>

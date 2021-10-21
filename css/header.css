@@ -1,12 +1,49 @@
 div.barraNegra {
     background-color: black;
     color: white;
+    font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 5rem; 
 }
+
 
 div.barraAmarilla {
     background-color: #f0a83e;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 4px 2rem;
 }
 
-ul {
+div.logoPrincipal {
+    height: 60px;
+    width: 170px;
+    background-image: url('../img/Logo.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+div.barraAmarilla nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 450px;
+}
+
+div.barraAmarilla ul {
     list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding-inline-start: 0;
+    
+   }
+
+div.barraAmarilla nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+div.mobile {
+    display: none;
 }

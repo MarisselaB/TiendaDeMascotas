@@ -1,0 +1,26 @@
+@media screen and (max-width: 768px) {
+    div.barraNegra {
+        display: none;
+    }
+    div.barraAmarilla nav {
+        display: none;    
+    }
+
+    div.mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    div.barraAmarillaFooter {
+        flex-direction: column;
+    }
+
+    div.barraCafeFooter {
+        flex-direction: column-reverse;
+    }
+
+    div.barraCafeFooterDer {
+        justify-content: center;
+    }
+
+}
